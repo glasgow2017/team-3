@@ -1,6 +1,6 @@
 import cgi
 import json
-import databaseHandler as dbh
+import dbHandler as dbh
 
 form = cgi.FieldStorage()
 
