@@ -1,6 +1,12 @@
 {"questions":
 [
-{"question" : "What is the income shared by the lowest 20% of the population?", "IND-key" : "SI.DST.FRST.20"},
+{"question" : {
+"title" : "What is the income shared by the lowest 20% of the population?",
+"IND-key" : "SI.DST.FRST.20",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"answers" : ["4.7", "10", "15", "2"]
+}},
 {"question" : "What percentage of women ages 15-49 are subjugated to physical and/or sexual violence?", "IND-key" : "SG.VAW.1549.ZS"},
 {"question" : "What is the percentage of women who believe a husband is justified for beating his wife?", "IND-key" : "SG.VAW.REAS.ZS"},
 {"question" : "What is the annual number of maternal deaths?", "IND-key" : "SH.MMR.DTHS"},
