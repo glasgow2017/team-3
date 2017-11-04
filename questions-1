@@ -5,6 +5,7 @@
 "IND-key" : "SI.DST.FRST.20",
 "numberUsersCorrect" : "0",
 "totalUsersAnswered" : "0",
+"region": "ken",
 "answers" : ["4.7", "10", "15", "2"]
 }},
 {"question" : {
