@@ -1,0 +1,26 @@
+{“question” : “What percentage of the rural population has access to electricity?”, “IND-key” : “EG.ELC.ACCS.RU.ZS”}
+{“question” : “What percentage women have a bank account?”, “IND-key” : “WP_time_10.3”}
+{“question” : “What percentage of teenage females are out of school?”, “IND-key” : “SE.SEC.UNER.LO.FE.ZS”}
+{“question” : “What percentage of teenagers are out of school?”, “IND-key” : “SE.SEC.UNER.LO.ZS”}
+{“question” : “How many adults are newly infected with HIV?”, “IND-key” : “SH.HIV.INCD”}
+{“question” : “How many ATMs are there for every 100,000 people?”, “IND-key” : “FB.ATM.TOTL.P5”}
+{“question” : “How many children are living with HIV?”, “IND-key” : “SH.HIV.0014”}
+{“question” : “How many children are newly infected with HIV?”, “IND-key” : “SH.HIV.INCD.14”}
+{“question” : “How many girls are in employment?”, “IND-key” : “SL.TLF.0714.FE.ZS”}
+{“question” : “How many children are unpaid family workers?”, “IND-key” : “SL.FAM.0714.ZS”}
+{“question” : “What percentage of children are out of school?”, “IND-key” : “SE.PRM.UNER.ZS”}
+{“question” : “What percentage of female teenagers are out of school?”, “IND-key” : “SE.PRM.UNER.FE.ZS”}
+{“question” : “How long is the compulsory education in this country?”, “IND-key” : “SE.COM.DURS”}
+{“question” : “What percentage of women use any form of contraception?”, “IND-key” : “SP.DYN.CONU.ZS”}
+{“question” : “What percentage of females have completed secondary school?”, “IND-key” : “SE.SEC.CUAT.LO.FE.ZS”}
+{“question” : “What percentage of people have completed secondary school?”, “IND-key” : “SE.SEC.CUAT.LO.ZS”}
+{“question” : “What percentage of females have completed primary school?”, “IND-key” : “SE.PRM.CUAT.FE.ZS”}
+{“question” : “What percentage of people have completed primary school?”, “IND-key” : “SE.PRM.CUAT.ZS”}
+{“question” : “How many, on average, babies are born per woman?”, “IND-key” : “SP.DYN.TFRT.IN”}
+{“question” : “What percentage of babies are immunised against measles?”, “IND-key” : “SH.IMM.MEAS”}
+{“question” : “What is the income share of the bottom 20%?”, “IND-key” : “SI.DST.FRST.20”}
+{“question” : “What percentage of the population have used the internet in the last 3 months?”, “IND-key” : “IT.NET.USER.ZS”}
+{“question” : “Does the law mandate paid maternity leave?”, “IND-key” : “SG.LAW.LEVE.PU”}
+{“question” : “Does the law prohibit child marriage?”, “IND-key” : “SG.LAW.CHMR”}
+{“question” : “What is the life expectancy for females at birth?”, “IND-key” : “SP.DYN.LE00.FE.IN”}
+{“question” : “What is the life expectancy at birth?”, “IND-key” : “SP.DYN.LE00.IN”}
