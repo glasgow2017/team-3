@@ -9,14 +9,6 @@
 "answers" : ["4.7", "10", "15", "2"]
 }},
 {"question" : {
-"title" : "What percentage of women ages 15-49 are subjugated to physical and/or sexual violence?",
-"IND-key" : "SG.VAW.1549.ZS",
-"numberUsersCorrect" : "0",
-"totalUsersAnswered" : "0",
-"region" : "ken",
-"answers" : ["","","",""]
-}},
-{"question" : {
 "title" : "What is the percentage of women who believe a husband is justified for beating his wife?",
 "IND-key" : "SG.VAW.REAS.ZS",
 "numberUsersCorrect" : "0",
@@ -113,14 +105,6 @@
 "answers" : ["","","",""]
 }},
 {"question" : {
-"title" : "What percentage of unemployed men (ages 15-24)",
-"IND-key" : "SL.UEM.1524.MA.NE.ZS",
-"numberUsersCorrect" : "0",
-"totalUsersAnswered" : "0",
-"region" : "ken",
-"answers" : ["","","",""]
-}},
-{"question" : {
 "title" : "What is the percentage of girls who were first married before age 18?",
 "IND-key" : "SP.M18.2024.FE.ZS",
 "numberUsersCorrect" : "0",
@@ -193,14 +177,6 @@
 "answers" : ["","","",""]
 }},
 {"question" : {
-"title" : "What percentage women have a bank account?",
-"IND-key" : "WP_time_10.3",
-"numberUsersCorrect" : "0",
-"totalUsersAnswered" : "0",
-"region" : "ken",
-"answers" : ["","","",""]
-}},
-{"question" : {
 "title" : "What percentage of teenage females are out of school?",
 "IND-key" : "SE.SEC.UNER.LO.FE.ZS",
 "numberUsersCorrect" : "0",
@@ -251,14 +227,6 @@
 {"question" : {
 "title" : "How many girls are in employment?",
 "IND-key" : "SL.TLF.0714.FE.ZS",
-"numberUsersCorrect" : "0",
-"totalUsersAnswered" : "0",
-"region" : "ken",
-"answers" : ["","","",""]
-}},
-{"question" : {
-"title" : "How many children are unpaid family workers?",
-"IND-key" : "SL.FAM.0714.ZS",
 "numberUsersCorrect" : "0",
 "totalUsersAnswered" : "0",
 "region" : "ken",
@@ -337,7 +305,7 @@
 "answers" : ["","","",""]
 }},
 {"question" : {
-"title" : "What percentage of babies are immunised against measles?", 
+"title" : "What percentage of babies are immunised against measles?",
 "IND-key" : "SH.IMM.MEAS",
 "numberUsersCorrect" : "0",
 "totalUsersAnswered" : "0",
@@ -363,14 +331,6 @@
 {"question" : {
 "title" : "Does the law mandate paid maternity leave?",
 "IND-key" : "SG.LAW.LEVE.PU",
-"numberUsersCorrect" : "0",
-"totalUsersAnswered" : "0",
-"region" : "ken",
-"answers" : ["","","",""]
-}},
-{"question" : {
-"title" : "Does the law prohibit child marriage?",
-"IND-key" : "SG.LAW.CHMR",
 "numberUsersCorrect" : "0",
 "totalUsersAnswered" : "0",
 "region" : "ken",
