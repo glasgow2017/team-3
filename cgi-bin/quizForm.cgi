@@ -8,8 +8,5 @@ country = form.getvalue('country')
 age = form.getvalue('age')
 gender = form.getvalue('gender')
 
-data
-
-
 #add user to database
 dbh.createUser(age, gender, loaction)
