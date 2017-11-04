@@ -1,0 +1,10 @@
+{"tip" : "You can make or sign petitions on websites like change.org?"}
+{"tip" : "Women who have been physically or sexually abused by their partners are more than twice more likely to have an abortion?"}
+{"tip" : "Women who have been physically or sexually abused by their partners are almost 1.5 times more likely to get HIV?"}
+{"tip" : "More than 1 in 10 girs have experienced forced sexual intercourse globally."}
+{"tip" : "Adult women account for 51 per cent of all human trafficking victims detected globally."}
+{"tip" : "In the majority of countries, less than 40 per cent of the women who experience violence seek help of any sort."}
+{"tip" : "Access http://www.worldbank.org for more information on violence against women."}
+{"tip" : "Directly engaging men in spaces they occupy, like sports, makes them reflect on social norms and has been shown to reduce violence againts women."}
+{"tip" : "Targeting men’s peer groups and entire communities (through e.g. Community Driven Development programs) has been shown to reduce violence against women."}
+{"tip" : "Training women in martial arts and educating men on consent has been shown to reduce the frequency of sexual crimes."}
