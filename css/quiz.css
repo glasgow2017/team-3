@@ -1,0 +1,6 @@
+.question {
+    margin-bottom:20px;
+}
+.active {
+    border-bottom:3px solid black;
+}
