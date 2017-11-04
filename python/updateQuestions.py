@@ -4,21 +4,8 @@ import json
 import urllib.request
 import time
 
-
-
-
-#    for i in indicators:
-#        url="http://api.worldbank.org/countries/"+country+"/indicators/"+i+"?format=json"
-#        data=urllib.request.urlopen(url).read()
-#        j_data=json.loads(data)
-
-
-#print("hello")
-#time.sleep(5)
-#print("hi")
-
 def refreshQuestions():
-    fileName="questions.json"
+    fileName="../json/questions.json"
     json_file=open(fileName)
     q_data=json.load(json_file) #json file as an object
     json_file.close()
@@ -27,6 +14,7 @@ def refreshQuestions():
     questions=q_data['questions']
 
     for j in range(len(questions)):
+        print(j)
         q=questions[j]
         ind_key=q["question"]['IND-key']
         country=q["question"]['region']
