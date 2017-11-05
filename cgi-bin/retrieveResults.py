@@ -1,6 +1,3 @@
-import sys, json
-
-#TODO: Depends on how data will be recieved !
 def countResults(data):
     total=len(data)
     correct=0
