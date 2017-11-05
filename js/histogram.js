@@ -85,7 +85,7 @@
      //bs end
      console.log("myObj: " + myObj);
      var myData = [];
-         myData.push(["Age", "Male", "Female"]);
+         //myData.push(["Age", "Male", "Female"]);
      for (var property in myObj) {
          myData.push(myObj[property]);
      }
