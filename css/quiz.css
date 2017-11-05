@@ -4,10 +4,14 @@
 .correct {
     background-image:url('../imgs/green-streak.png');
     background-repeat:no-repeat;
+    background-position-x: 50%;
+    background-position-y: 20%;
 }
 .false {
     background-image:url('../imgs/red-streak.jpg');
     background-repeat:no-repeat;
+    background-position-x: 40%;
+    background-position-y: 40%;
 }
 .active {
     border-bottom:3px solid white;
@@ -42,9 +46,7 @@ footer {
 .blockquote {
     background-color:#999 !important;
 }
-.correct {
 
-}
 .heading {
     font-size:90px;
 }
