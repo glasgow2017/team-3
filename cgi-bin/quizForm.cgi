@@ -5,21 +5,23 @@ import dbHandler as dbh
 import retrieveResults as retr
 import updateUserResults as updRes
 
+print("hello")
 form = cgi.FieldStorage()
 
-country = form.getvalue('country')
-age = form.getvalue('age')
-gender = form.getvalue('gender')
+country = form.getvalue('regionIn')
+age = form.getvalue('ageIn')
+gender = form.getvalue('genderIn')
 results = form.getValue('results')
+
 
 #add user to database
 #dbh.createUser(age, gender, country)
 
-
-#Get user results of quiz and store them in userResults
-updateUsers.addUser(18,"male","kenya")
-correct,total=retr.countResults(results)
-updRes.updateResults(age,gender,correct,total)
+if(age>0):
+  #Get user results of quiz and store them in userResults
+  updateUsers.addUser(18,"male","kenya")
+  correct,total=retr.countResults(results)
+  updRes.updateResults(age,gender,correct,total)
 
 
 '''
