@@ -17,9 +17,8 @@
             "8" : ['60-69', 9, 13.1],
             "9" : ['70+', 8, 13.1]};
 
-       // var data = feedToGraph(someObj);
-
-     var data = google.visualization.arrayToDataTable([
+       var data = feedToGraph(someObj);
+     /*var data = google.visualization.arrayToDataTable([
           ['Age', 'Male', 'Female'],
           ['0-9', 80, 23.3],
           ['10-14', 70, 50],
@@ -29,7 +28,7 @@
           ['50-59', 40, 13.1],
           ['60-69', 9, 13.1],
           ['70+', 8, 13.1]
-        ]);
+        ]);*/
 
         var materialOptions = {
           width: 900,
@@ -79,34 +78,11 @@
  //myObj structure: {"key" : ["age", "male", "female"]} <--- with multiple keys
  function feedToGraph(myObj) {
      var myData = [];
-     myData.push(["Age", "Male", "Female"]);
+     //myData.push(["Age", "Male", "Female"]);
      for (var property in myObj) {
-         myData.push(property);
+         myData.push(myObj[property]);
      }
-     /*for(key in myObj) {
-         if(myObj.hasOwnProperty(key)) {
-             myData.push(data[key]);
-         }
-     }*/
-     alert("myData: " + myData);
-     return myData;
+     console.log("myData: " +JSON.stringify( myData));
+     //alert("myData[0]: " + myData[0]);
+     return google.visualization.arrayToDataTable(myData);
  }
-
- /*//Attempts to add rows onto graph from object
- function objToGraph(obj) {
-     var data = google.visualization.arrayToDataTable([
-         ['Age', 'Male', 'Female'],
-         [obj[Object.keys("1")[0]], 80, 23.3],
-         ['10-14', 70, 50],
-         ['20-24', 20, 14.3],
-         ['30-39', 5, 0.9],
-         ['40-49', 60, 13.1],
-         ['50-59', 40, 13.1],
-         ['60-69', 9, 13.1],
-         ['70+', 8, 13.1]
-     ]);
-     Object.keys(obj).forEach(function (key) {
-
-     }
-     return data;
- }*/
