@@ -8,7 +8,7 @@ $.get('json/questions.json',function(response) {
     }
 
     function appendQuestion(q,i) {
-        var questionContainer = $('<div></div>').addClass('question');
+        var questionContainer = $('<div></div>').addClass('question question' + i);
         var askQuestion = $('<p></p>').addClass('ask-question').text(q.question.title)
                                       .appendTo(questionContainer);
         for (var n = 0; n < 4; n++) {
@@ -18,6 +18,7 @@ $.get('json/questions.json',function(response) {
 
             var answerQuestionInput = $('<input></input>').prop('type','input')
                                                       .prop('name',i)
+                                                      .addClass('radioGroup' + i)
                                                       .prop('type','radio')
                                                       .css('margin','10px')
                                                       .appendTo(answerQuestionLabel);
@@ -26,12 +27,31 @@ $.get('json/questions.json',function(response) {
        $('#allQuestions').append(questionContainer);
     }
 
-    $('.question').on('click',function() {
-        $(this).children('input').prop('disabled', true);
-    })
-
     $('#submitBt').on('click',function() {
-            $(this).children('input[type=radio').prop('disabled', true);
+    var resultsArr = [];
+            for (var p = 0;p < 10;p++) {
+                $('.question radioGroup' + p).each(function (index) {
+                if ($(this':checked')) {
+                    if (index == 0 ) {
+                        resultsArr[p] = {"id" : p, "result" : true}
+                    }
+                    else {
+                       resultsArr[p] = {"id" : p, "result" : false}
+                    }
+                }
+
+
+
+                })
+            }
+         var region = $('#regionIn:selected').val();
+         var age = $('#ageIn').val();
+         var gender = $('#genderIn:selected').val();
+         var data = { 'gender':gender,
+                       'age':age,
+                       'region':region,
+                        'results':results }
+        $.pos('cgi-bin/',data)
       })
 
 
