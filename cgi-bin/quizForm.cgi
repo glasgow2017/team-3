@@ -2,6 +2,8 @@ import cgi
 import json
 import updateUsers
 import dbHandler as dbh
+import retrieveResults as retr
+import updateUserResults as updRes
 
 form = cgi.FieldStorage()
 
@@ -14,21 +16,11 @@ results = form.getValue('results')
 #dbh.createUser(age, gender, country)
 
 
+#Get user results of quiz and store them in userResults
 updateUsers.addUser(18,"male","kenya")
+correct,total=retr.countResults(results)
+updRes.updateResults(age,gender,correct,total)
 
-
-
-'''
-Get user results of quiz and store them in userResults
-
-form = cgi.FieldStorage()
-
-correct=form.getvalue('totalCorrect')
-total=form.getvalue('totalAnswered')
-
-
-
-'''
 
 '''
 Send the userResults to the client after they have submitted
