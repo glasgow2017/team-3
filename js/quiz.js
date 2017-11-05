@@ -34,10 +34,8 @@ $.get('json/questions.json',function(response) {
         }
        $('#allQuestions').append(questionContainer);
     }
-    console.log("hello ------")
     $('#submitBt').on('click',function(e) {
         e.preventDefault();
-        console.log("hello23r4 ------")
         var resultsArr = [];
         for (var p = 0;p < 10;p++) {
             $('.question' + p + ' input').each(function (  index ) {
@@ -50,7 +48,7 @@ $.get('json/questions.json',function(response) {
                 }
             });
         }
-        console.log(resultsArr);
+
         var region = $('#regionIn:selected').val();
         var age = $('#ageIn').val();
         var gender = $('#genderIn:selected').val();
@@ -59,7 +57,7 @@ $.get('json/questions.json',function(response) {
             'region':region,
             'results':resultsArr };
 
-        $.post('cgi-bin/quizForm',data)
+        $.post('cgi-bin/quizForm.py',data)
     });
 
     $('input').on('click', function (event) {
