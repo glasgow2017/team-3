@@ -5,8 +5,8 @@
         "range_label": "0-9",
         "age_min": 0,
         "age_max": 9,
-        "male_correct": 0,
-        "male_total": 0,
+        "male_correct": 1,
+        "male_total": 1,
         "female_correct": 0,
         "female_total": 0
       }
