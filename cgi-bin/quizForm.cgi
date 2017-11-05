@@ -8,9 +8,11 @@ import updateUserResults as updRes
 form = cgi.FieldStorage()
 
 country = form.getvalue('regionIn')
-age = form.getvalue('ageIn')
+ageString = form.getvalue('ageIn')
+age = int(ageString)
 gender = form.getvalue('genderIn')
-#results = form.getValue('results')
+resultsString = form.getValue('results')
+results = json.load(resultsString)
 
 #add user to database
 #dbh.createUser(age, gender, country)
