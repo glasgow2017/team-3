@@ -15,11 +15,15 @@
     <link rel="stylesheet" href="css/quiz.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/quiz.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/histogram.js"></script>
+    <script src="js/globe.js"></script>
 
 </head>
 
 <body>
+
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -27,31 +31,28 @@
         </div>
         <ul class="nav navbar-nav">
             <li><a href="#">Get involved</a></li>
-            <li><a class="active" href="javascript:;">Take the quiz</a></li>
-            <li><a href="facts.html">See the facts</a></li>
+            <li><a href="quiz.html">Take the quiz</a></li>
+            <li><a class="active" href="javascript:;">See the facts</a></li>
         </ul>
     </div>
 </nav>
 
 <div align="center" id="allQuestions" class="container">
-    <h2>How much do you <em>really</em> know about equality?</h2>
-    <hr>
+    <div style="width: 800px; height: 500px;" id="chart_div"></div>
 </div>
+<div style="clear:both;"></div>
+<blockquote class="blockquote">
+    <p class="mb-0">We fuel progress towards gender equality by making sure girls’ and women’s movements,
+        rights advocates and decision makers have easy-to-use data
+        and evidence to guide efforts to reach the Global Goals by 2030 and leave no one behind.</p>
+    <footer class="blockquote-footer">Equal Measures <cite title="Source Title"> 2017</cite></footer>
+</blockquote>
 <div align="center">
-<form class="form-inline">
-
-    <input class="form-control mb-2 mr-sm-2 mb-sm-0" id="genderIn" placeholder="Gender...">
-    <input class="form-control mb-2 mr-sm-2 mb-sm-0" id="regionIn" placeholder="Region...">
-    <input class="form-control mb-2 mr-sm-2 mb-sm-0" id="ageIn" placeholder="Age...">
-    <br>
-    <button class='btn btn-primary btn-lg' id="submitFormBt">Submit</button>
-</form>
+    <div id="geochart-colors" style="width: 700px; height: 433px;"></div>
 </div>
 
 </body>
 
-<footer>
-
-</footer>
+<footer></footer>
 
 </html>
