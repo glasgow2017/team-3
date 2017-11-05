@@ -19,7 +19,7 @@ results = form.getValue('results')
 
 if(age>0):
   #Get user results of quiz and store them in userResults
-  updateUsers.addUser(18,"male","kenya")
+  updateUsers.addUser(age,gender,country)
   correct,total=retr.countResults(results)
   updRes.updateResults(age,gender,correct,total)
 
