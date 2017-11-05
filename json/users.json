@@ -1,1 +1,16 @@
-{ "user" : []}
+{
+  "user": [
+    {
+      "age": "9",
+      "gender": "male",
+      "country": "kenya",
+      "id": "719c1bc6-c1d5-11e7-9dd8-c821580ee21d"
+    },
+    {
+      "age": 18,
+      "gender": "male",
+      "country": "kenya",
+      "id": "ad49be9e-c1d5-11e7-b985-c821580ee21d"
+    }
+  ]
+}
