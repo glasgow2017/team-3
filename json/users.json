@@ -1,0 +1,10 @@
+{
+  "users":[
+      {
+      "id":0,
+      "age":0,
+      "sex":0,
+      "location":null
+      }
+  ]
+}
