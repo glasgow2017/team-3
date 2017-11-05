@@ -27,9 +27,14 @@ $.get('json/questions.json',function(response) {
     }
 
     $('.question').on('click',function() {
-        $(this).children().prop('disabled', true);
-
+        $(this).children('input').prop('disabled', true);
     })
+
+    $('#submitBt').on('click',function() {
+            $(this).children('input[type=radio').prop('disabled', true);
+      })
+
+
 
 
 });
