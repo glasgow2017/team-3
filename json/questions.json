@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "questions": [
     {
@@ -662,3 +663,401 @@
     }
   ]
 }
+=======
+
+{"questions":
+[
+{"question" : {
+"title" : "What is the income shared by the lowest 20% of the population?",
+"IND-key" : "SI.DST.FRST.20",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"answers" : ["4.7", "10", "15", "2"]
+}},
+{"question" : {
+"title" : "What percentage of women ages 15-49 are subjugated to physical and/or sexual violence?",
+"IND-key" : "SG.VAW.1549.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What is the percentage of women who believe a husband is justified for beating his wife?",
+"IND-key" : "SG.VAW.REAS.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What is the annual number of maternal deaths?",
+"IND-key" : "SH.MMR.DTHS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What is the number of annual deaths of children under 28 days of age?",
+"IND-key" : "SH.H2O.BASW.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of the population practices public defecation?",
+"IND-key" : "SH.STA.ODFC.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of girls stay in school until the last grade of primary?",
+"IND-key" : "SE.PRM.PRSL.FE.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of boys stay in school until the last grade of primary?",
+"IND-key" : "SE.PRM.PRSL.MA.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of girls ages 15-24 have HIV?",
+"IND-key" : "SH.HIV.1524.FE.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of boys ages 15-24 have HIV?",
+"IND-key" : "SH.HIV.1524.MA.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of the working population is made up of women?",
+"IND-key" : "SL.TLF.CACT.FM.NE.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What is the share of women in wage in the nonagricultular sector?",
+"IND-key" : "SL.EMP.INSV.FE.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of teenage mothers (ages 15-19)?",
+"IND-key" : "SP.MTR.1519.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of unemployed women (ages 15-24)?",
+"IND-key" : "SL.UEM.1524.FE.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of unemployed men (ages 15-24)",
+"IND-key" : "SL.UEM.1524.MA.NE.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What is the percentage of girls who were first married before age 18?",
+"IND-key" : "SP.M18.2024.FE.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of women over 15 live with HIV?",
+"IND-key" : "SH.DYN.AIDS.FE.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of women make choices about their own health care, major household purchases and visiting their family?",
+"IND-key" : "SG.DMK.ALLD.FN.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of women believe it's okay for a husband to beat his wife when she argues with him?",
+"IND-key" : "SG.VAW.ARGU.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of women believe it's okay for a husband to beat his wife when she burns the food?",
+"IND-key" : "SG.VAW.BURN.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of women believe it's okay for a husband to beat his wife when she goes out without telling him?",
+"IND-key" : "SG.VAW.GOES.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of women believe it's okay for a husband to beat his wife when she neglects the children?",
+"IND-key" : "SG.VAW.NEGL.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of women believe it's okay for a husband to beat his wife when she refuses to have sex with him?",
+"IND-key" : "SG.VAW.REFU.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of the rural population has access to electricity?",
+"IND-key" : "EG.ELC.ACCS.RU.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage women have a bank account?",
+"IND-key" : "WP_time_10.3",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of teenage females are out of school?",
+"IND-key" : "SE.SEC.UNER.LO.FE.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of teenagers are out of school?",
+"IND-key" : "SE.SEC.UNER.LO.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "How many adults are newly infected with HIV?",
+"IND-key" : "SH.HIV.INCD",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "How many ATMs are there for every 100,000 people?",
+"IND-key" : "FB.ATM.TOTL.P5",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "How many children are living with HIV?",
+"IND-key" : "SH.HIV.0014",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "How many children are newly infected with HIV?",
+"IND-key" : "SH.HIV.INCD.14",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "How many girls are in employment?",
+"IND-key" : "SL.TLF.0714.FE.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "How many children are unpaid family workers?",
+"IND-key" : "SL.FAM.0714.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of children are out of school?",
+"IND-key" : "SE.PRM.UNER.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of female teenagers are out of school?",
+"IND-key" : "SE.PRM.UNER.FE.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "How long is the compulsory education in this country?",
+"IND-key" : "SE.COM.DURS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of women use any form of contraception?",
+"IND-key" : "SP.DYN.CONU.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of females have completed secondary school?",
+"IND-key" : "SE.SEC.CUAT.LO.FE.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of people have completed secondary school?",
+"IND-key" : "SE.SEC.CUAT.LO.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of females have completed primary school?",
+"IND-key" : "SE.PRM.CUAT.FE.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of people have completed primary school?",
+"IND-key" : "SE.PRM.CUAT.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "How many, on average, babies are born per woman?",
+"IND-key" : "SP.DYN.TFRT.IN",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of babies are immunised against measles?",
+"IND-key" : "SH.IMM.MEAS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What is the income share of the bottom 20%?",
+"IND-key" : "SI.DST.FRST.20",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What percentage of the population have used the internet in the last 3 months?",
+"IND-key" : "IT.NET.USER.ZS",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "Does the law mandate paid maternity leave?",
+"IND-key" : "SG.LAW.LEVE.PU",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "Does the law prohibit child marriage?",
+"IND-key" : "SG.LAW.CHMR",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What is the life expectancy for females at birth?",
+"IND-key" : "SP.DYN.LE00.FE.IN",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}},
+{"question" : {
+"title" : "What is the life expectancy at birth?",
+"IND-key" : "SP.DYN.LE00.IN",
+"numberUsersCorrect" : "0",
+"totalUsersAnswered" : "0",
+"region" : "ken",
+"answers" : ["","","",""]
+}}
+]
+}
+>>>>>>> 98d736fcd47877ffee3ede3fa5c269e0985bcd91

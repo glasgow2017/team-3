@@ -12,7 +12,7 @@ $.get('json/questions.json',function(response) {
         var askQuestion = $('<p></p>').addClass('ask-question').text(q.question.title)
                                       .appendTo(questionContainer);
         for (var n = 0; n < 4; n++) {
-            var answerQuestionContainer = $('<div></div>').addClass('question');
+            var answerQuestionContainer = $('<div></div>');
             var answerQuestionLabel = $('<label></label>').appendTo(answerQuestionContainer)
                                                             .text('Answer: ' + q.question.answers[n]);
 
@@ -25,6 +25,11 @@ $.get('json/questions.json',function(response) {
         }
        $('#allQuestions').append(questionContainer);
     }
+
+    $('.question').on('click',function() {
+        $(this).children().prop('disabled', true);
+
+    })
 
 
 });
