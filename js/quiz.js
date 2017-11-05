@@ -2,9 +2,17 @@ $(function() {
 
 $.get('json/questions.json',function(response) {
     var allQuestions = response.questions;
-    for (var i = 0; i < 10;i++) {
-        var q = allQuestions[i];
-        appendQuestion(q,i);
+    var random = [allQuestions.length];
+
+    for (var i = 0; i < 10; i++) {
+        random[i] = Math.floor(Math.random()*(allQuestions.length));
+        var q = allQuestions[random[i]];
+        if(q.question.answers[0] == null) {
+            if(i!=0) i--;
+            else i = 0;
+        } else {
+            appendQuestion(q, i);
+        }
     }
 
     function appendQuestion(q,i) {
@@ -49,19 +57,19 @@ $.get('json/questions.json',function(response) {
             'age':age,
             'region':region,
             'results':resultsArr };
-        $.post('cgi-bin/processForm',data)
+        $.post('cgi-bin/processForm',data);
     });
 
     $('input').on('click', function (event) {
         var group = $(this).attr('name');
 
         $('.question' + group + ' input').each(function( index ) {
-            $(this).attr('disabled','true')
+            $(this).attr('disabled','true');
             if ($(this).is(':checked')) {
                 if (index == 0 ) {
-                    $('.question' + group).addClass('correct')
+                    $('.question' + group).addClass('correct');
                 } else {
-                    $('.question' + group).addClass('false')
+                    $('.question' + group).addClass('false');
                 }
             }
         });
