@@ -1,4 +1,4 @@
-import cgi
+import cgi,cgitb
 import json
 import updateUsers
 #import dbHandler as dbh
@@ -8,16 +8,10 @@ import updateUserResults as updRes
 Main script that the server will call. First, it will recieve input about
 the user as well as their answers to the quizzes. Updates local JSON files
 '''
-'''
-try:
-    port=8000
-    server = HTTPServer(('',port),WebServerHandler)
-    print("running")
-    server.serve_forever()
-'''
-
+cgitb.enable()
+print("hello world")
 form = cgi.FieldStorage()
-
+print("got data")
 #Handle all fields from the POST Request
 country = form.getvalue('regionIn')
 ageString = form.getvalue('ageIn')
@@ -25,13 +19,6 @@ age = int(ageString)
 gender = form.getvalue('genderIn')
 resultsString = form.getValue('results')
 results = json.load(resultsString)
-
-'''
-country="test"
-age=20
-gender="male"
-results=[{"id":0,"result":True}]
-'''
 
 #Given an array of booleans, will count how many
 #elements are True and how many elements there are in total

@@ -26,9 +26,10 @@ $.get('json/questions.json',function(response) {
         }
        $('#allQuestions').append(questionContainer);
     }
-
+    console.log("hello ------")
     $('#submitBt').on('click',function(e) {
-        e.preventDefault();
+      //  e.preventDefault();
+        console.log("hello23r4 ------")
         var resultsArr = [];
         for (var p = 0;p < 10;p++) {
             $('.question' + p + ' input').each(function (  index ) {
@@ -49,7 +50,7 @@ $.get('json/questions.json',function(response) {
             'age':age,
             'region':region,
             'results':resultsArr };
-        $.post('cgi-bin/processForm',data)
+        $.post('cgi-bin/quizForm',data)
     });
 
     $('input').on('click', function (event) {
