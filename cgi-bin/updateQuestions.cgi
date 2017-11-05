@@ -40,3 +40,23 @@ def refreshQuestions():
     json_file=open(fileName,"w+")
     json_file.write(json.dumps(q_data,indent=2))
     json_file.close()
+
+def fillFalseAnswers():
+  fileName="../json/questions.json"
+  json_file=open(fileName)
+  q_data=json.load(json_file) #json file as an object
+  json_file.close()
+
+  questions=q_data['questions']
+
+  for j in range(len(questions)):
+      q=questions[j]
+      answers=q["question"]['answers']
+      correct=answers[0]
+      
+
+
+
+  json_file=open(fileName,"w+")
+  json_file.write(json.dumps(q_data,indent=2))
+  json_file.close()

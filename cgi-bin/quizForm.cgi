@@ -26,6 +26,11 @@ gender = form.getvalue('genderIn')
 resultsString = form.getValue('results')
 results = json.load(resultsString)
 
+print(country)
+print(age)
+print(gender)
+
+
 '''
 country="test"
 age=20
@@ -59,14 +64,23 @@ def checkResults(results):
     isResultLegal = False
   return isResultLegal
 
-#Check that input is valid
-checkCountry = country is not None
-checkAge = age is not None and age > 0
-checkGender = gender is "male" or gender is "female"
+def do_POST():
+    checkCountry = country is not None
+    checkAge = age is not None and age > 0
+    checkGender = gender is "male" or gender is "female"
+    #################################
+    if ((checkCountry) & (checkAge) & (checkGender) & (checkResults(results))):
+        updateUsers.addUser(age,gender,country)
+        correct,total=countResults(results)
+        updRes.updateResults(age,gender,correct,total)
+        print("OK")
+    else:
+      print("bad")
 
-if (checkCountry and checkAge and checkGender and checkResults(results)):
-  updateUsers.addUser(age,gender,country)
-  correct,total=countResults(results)
-  updRes.updateResults(age,gender,correct,total)
-else:
-  print("bad")
+
+'''
+#Check that input is valid
+
+
+
+'''
