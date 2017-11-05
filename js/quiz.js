@@ -49,14 +49,14 @@ $.get('json/questions.json',function(response) {
             });
         }
 
-        var region = $('#regionIn:selected').val();
+        var region = $('#regionIn').find(':selected').val();
         var age = $('#ageIn').val();
-        var gender = $('#genderIn:selected').val();
+        var gender = $('#genderIn').find(':selected').val();
         var data = {  'gender':gender,
             'age':age,
             'region':region,
-            'results':resultsArr };
-
+            'results':JSON.stringify(resultsArr) };
+        console.log(data);
         $.post('cgi-bin/quizForm.py',data)
     });
 
