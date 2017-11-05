@@ -36,7 +36,7 @@ $.get('json/questions.json',function(response) {
     }
     console.log("hello ------")
     $('#submitBt').on('click',function(e) {
-      //  e.preventDefault();
+        e.preventDefault();
         console.log("hello23r4 ------")
         var resultsArr = [];
         for (var p = 0;p < 10;p++) {
