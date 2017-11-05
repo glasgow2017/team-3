@@ -8,6 +8,7 @@ form = cgi.FieldStorage()
 country = form.getvalue('country')
 age = form.getvalue('age')
 gender = form.getvalue('gender')
+results = form.getValue('results')
 
 #add user to database
 #dbh.createUser(age, gender, country)
