@@ -2,6 +2,7 @@
         'packages': ['corechart', 'bar']
       });
       google.charts.setOnLoadCallback(drawStuff);
+       // google.charts.setOnLoadCallback(getJsonFromServer());
 
  var someObj = {
      "1": ['Age', 'Male', 'Female'],
@@ -20,9 +21,10 @@
         var button = document.getElementById('change-chart');
         var chartDiv = document.getElementById('chart_div');
 
-          var data = feedToGraph(someObj);
+          // var data = jsonFromServer;
+        var data = feedToGraph();
         /*var data = google.visualization.arrayToDataTable([
-          ['Gender', 'Male', 'Female'],
+          ['Age', 'Male', 'Female'],
           ['0-9', 80, 23.3],
           ['10-14', 70, 50],
           ['20-24', 20, 14.3],
@@ -68,7 +70,7 @@
  /**
   * Gets Json object from server to feed into graph
   */
- function receiveJsonFromServer() {
+ /*function receiveJsonFromServer() {
      var xmlhttp = new XMLHttpRequest();
      var url = "userResults.json";
      xmlhttp.onreadystatechange = function () {
@@ -76,16 +78,29 @@
              var myObj = JSON.parse(this.responseText);
          }
      }
- }
+ }*/
+ //getJsonFromServer();
+ //Method to access json file from server
+ /*function getJsonFromServer() {
+     $.get('json/userResults.json',function(response) {
+        var jsonFile = response.results;
+        console.log(jsonFile[0]);
+     //var jsonFile = "json/userResults.json";
+         var myObj = readJsonFile(jsonFile);
+         var jsonToBeReturned =  feedToGraph(myObj);
+         drawStuff(jsonToBeReturned);
+    });
+ }*/
 
-
- function feedToGraph(myObj) {
+ function feedToGraph() {
+       // var myObj = someObj;
      //bs start
-     //readJsonFile(jsonFile);
+    // var myObj = readJsonFile();
+     var myObj = someObj;
      //bs end
      console.log("myObj: " + myObj);
      var myData = [];
-         //myData.push(["Age", "Male", "Female"]);
+         myData.push(["Age", "Male", "Female"]);
      for (var property in myObj) {
          myData.push(myObj[property]);
      }
@@ -93,18 +108,18 @@
      return google.visualization.arrayToDataTable(myData);
  }
 
- var jsonFile = '{"results": [{"age_range": {"range_label": "0-9","age_min": 0,"age_max": 9,"male_correct": 1,"male_total": 1,"female_correct": 0,"female_total": 0 +}},'
-     '{"age_range": {"range_label": "10-14", "age_min": 10, "age_max": 14,"male_correct": 0, "male_total": 0,"female_correct": 0,  "female_total": 0}}]}';
+ //var jsonObj = '{"results": [{"age_range": {"range_label": "0-9","age_min": 0,"age_max": 9,"male_correct": 1,"male_total": 1,"female_correct": 0,"female_total": 0}},{"age_range": {"range_label": "10-14", "age_min": 10, "age_max": 14,"male_correct": 0, "male_total": 0,"female_correct": 0,  "female_total": 0}}]}';
 
       /**
       * Trying to return JS object from JSON file with desired structure {"key" : ["age", "male", "female"]}
       * @param jsonObj
       */
-         function readJsonFile(jsonObj) {
+         function readJsonFile() {
+             var jsonObj = "userResults.json";
              var chartObj = {};
              console.log("jsonObj: " + jsonObj);
              var jsonParsed = JSON.parse(jsonObj);
-             var jsonArray = jsonParsed[results];
+             var jsonArray = jsonParsed["results"];
              console.log("jsonArray: " + jsonArray);
              for (var i = 0; i < jsonArray.length; i++) {
                  var keyName = "value" + i;
@@ -113,5 +128,6 @@
                  var currentProperty = currentObj["age_range"];
                  var returnedArray = [currentProperty["range_label"], currentProperty["male_correct"], currentProperty["female_correct"]];
                  chartObj[keyName] = returnedArray;
-                 }
              }
+             return chartObj;
+         }
