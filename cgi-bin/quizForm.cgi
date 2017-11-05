@@ -1,6 +1,7 @@
 import cgi
 import json
-#import dbHandler as dbh
+import updateUsers
+import dbHandler as dbh
 
 form = cgi.FieldStorage()
 
@@ -11,21 +12,11 @@ gender = form.getvalue('gender')
 #add user to database
 #dbh.createUser(age, gender, country)
 
-#add to users.json
-def addToUsersJSON(country, gender, age):
-  user = {}
-  user['id'] = 0 #getNextId()
-  user['gender'] = gender
-  user['age'] = age
-  user['country'] = country
 
-  fileName="../json/users.json"
-  json_file=open(fileName,"w+")
-  user_data=json.load(json_file)
-  print(user_data[users])
-  json_file.close()
+updateUsers.addUser(18,"male","kenya")
 
-addToUsersJSON("kenya","male", 18)
+
+
 '''
 Get user results of quiz and store them in userResults
 
