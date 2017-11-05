@@ -6,6 +6,7 @@ $.get('json/questions.json',function(response) {
         var q = allQuestions[i];
         appendQuestion(q,i);
     }
+
     function appendQuestion(q,i) {
         var questionContainer = $('<div></div>').addClass('question');
         var askQuestion = $('<p></p>').addClass('ask-question').text(q.question.title)
@@ -16,7 +17,7 @@ $.get('json/questions.json',function(response) {
                                                             .text('Answer: ' + q.question.answers[n]);
 
             var answerQuestionInput = $('<input></input>').prop('type','input')
-                                                      .prop('id',i)
+                                                      .prop('name',i)
                                                       .prop('type','radio')
                                                       .css('margin','10px')
                                                       .appendTo(answerQuestionLabel);
@@ -25,7 +26,7 @@ $.get('json/questions.json',function(response) {
        $('#allQuestions').append(questionContainer);
     }
 
-    
+
 });
 
 });
