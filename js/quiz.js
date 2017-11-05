@@ -31,17 +31,14 @@ $.get('json/questions.json',function(response) {
     var resultsArr = [];
             for (var p = 0;p < 10;p++) {
                 $('.question radioGroup' + p).each(function (index) {
-                if ($(this':checked')) {
-                    if (index == 0 ) {
-                        resultsArr[p] = {"id" : p, "result" : true}
-                    }
-                    else {
-                       resultsArr[p] = {"id" : p, "result" : false}
-                    }
-                }
-
-
-
+                  if ($(this':checked')) {
+                      if (index == 0 ) {
+                          resultsArr[p] = {"id" : p, "result" : true}
+                      }
+                      else {
+                         resultsArr[p] = {"id" : p, "result" : false}
+                      }
+                  }
                 })
             }
          var region = $('#regionIn:selected').val();
