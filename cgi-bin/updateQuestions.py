@@ -3,6 +3,7 @@
 import json
 import urllib.request
 import time
+import math
 
 #Refreshes the answers to questions in questions.json
 def refreshQuestions():
@@ -26,11 +27,12 @@ def refreshQuestions():
         i=0
         ans=None
 
-        #Goes over all 
+        #Goes over all
         while((ans is None) and (i<len(new_json_data[1]))):
             ans=new_json_data[1][i]['value']
             i=i+1
         if(ans is not None):
+            ans=round(float(ans),2)
             q_data['questions'][j]["question"]["answers"][0]=ans
         else:
             print(q_data['questions'][j]["question"]["title"])
