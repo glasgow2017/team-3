@@ -23,16 +23,16 @@ nav * {
 }
 .ask-question {
     font-size: 18px;
-    font-weight:larger;
+    font-weight:bolder;
 
 }
 .container-fluid {
     margin:10px;
 }
 .navbar {
-height:80px;
-background-image:url('../imgs/streak.png');
-background-size:contain;
+    height:80px;
+    background-image:url('../imgs/streak.png');
+    background-size:contain;
 }
 .navbar-brand {
     font-size:25px;
