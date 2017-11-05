@@ -1,5 +1,8 @@
 import json
 
+#Based on the user info, finds the correct age range_label
+#and gender such that number of correct/total answers for
+#each gender are updated
 def updateResults(age,sex,totalCorrect,totalAnswered):
     if(totalCorrect>totalAnswered):
         return
@@ -21,6 +24,7 @@ def updateResults(age,sex,totalCorrect,totalAnswered):
 
         #Found correct age_range so update
         if((age<age_max)&(age>age_min)):
+            #Update values based on gender
             if(sex=="male"):
                 data["results"][i]["age_range"]["male_correct"]+=totalCorrect
                 data["results"][i]["age_range"]["male_total"]+=totalAnswered

@@ -3,6 +3,7 @@ import urllib.request
 import time
 import uuid
 
+#Adds a new user to users.json
 def addUser(age,gender,country):
     if(age<0):
         return
@@ -24,6 +25,7 @@ def addUser(age,gender,country):
     json_file.write(json.dumps(data,indent=2))
     json_file.close()
 
+#Empties users.json of all users
 def resetUsers():
         fileName="../json/users.json"
         json_file=open(fileName)
