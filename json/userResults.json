@@ -1,0 +1,92 @@
+{
+  "results": [
+    {
+      "age_range": {
+        "range_label": "0-9",
+        "age_min": 0,
+        "age_max": 9,
+        "male_correct": 0,
+        "male_total": 0,
+        "female_correct": 0,
+        "female_total": 0
+      }
+    },
+    {
+      "age_range": {
+        "range_label": "10-14",
+        "age_min": 10,
+        "age_max": 14,
+        "male_correct": 0,
+        "male_total": 0,
+        "female_correct": 0,
+        "female_total": 0
+      }
+    },
+    {
+      "age_range": {
+        "range_label": "20-24",
+        "age_min": 20,
+        "age_max": 24,
+        "male_correct": 0,
+        "male_total": 0,
+        "female_correct": 0,
+        "female_total": 0
+      }
+    },
+    {
+      "age_range": {
+        "range_label": "30-39",
+        "age_min": 30,
+        "age_max": 39,
+        "male_correct": 0,
+        "male_total": 0,
+        "female_correct": 0,
+        "female_total": 0
+      }
+    },
+    {
+      "age_range": {
+        "range_label": "40-49",
+        "age_min": 40,
+        "age_max": 49,
+        "male_correct": 0,
+        "male_total": 0,
+        "female_correct": 0,
+        "female_total": 0
+      }
+    },
+    {
+      "age_range": {
+        "range_label": "50-59",
+        "age_min": 50,
+        "age_max": 59,
+        "male_correct": 0,
+        "male_total": 0,
+        "female_correct": 0,
+        "female_total": 0
+      }
+    },
+    {
+      "age_range": {
+        "range_label": "60-69",
+        "age_min": 60,
+        "age_max": 69,
+        "male_correct": 0,
+        "male_total": 0,
+        "female_correct": 0,
+        "female_total": 0
+      }
+    },
+    {
+      "age_range": {
+        "range_label": "70+",
+        "age_min": 70,
+        "age_max": 130,
+        "male_correct": 0,
+        "male_total": 0,
+        "female_correct": 0,
+        "female_total": 0
+      }
+    }
+  ]
+}

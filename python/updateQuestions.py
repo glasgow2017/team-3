@@ -34,15 +34,8 @@ def refreshQuestions():
             print(q_data['questions'][j]["question"]["title"])
             print("Invalid for region "+country)
     json_file=open(fileName,"w+")
-    json_file.write(json.dumps(q_data))
+    json_file.write(json.dumps(q_data,indent=2))
     json_file.close()
-
-
-
-
-
-
-
 
 
 refreshQuestions()

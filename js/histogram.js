@@ -1,4 +1,4 @@
-      google.charts.load('current', {
+ google.charts.load('current', {
         'packages': ['corechart', 'bar']
       });
       google.charts.setOnLoadCallback(drawStuff);
@@ -29,44 +29,22 @@
           series: {
             0: {
               axis: 'male'
-            }, // Bind series 0 to an axis named 'distance'.
+            },
           },
           axes: {
             y: {
               male: {
                 label: 'Percentage'
-              }, // Left y-axis.
+              },
             }
           }
         };
 
-        var classicOptions = {
-          width: 900,
-          series: {
-            0: {
-              targetAxisIndex: 0
-            },
-            1: {
-              targetAxisIndex: 1
-            }
-          },
-          title: 'Nearby galaxies - distance on the left, brightness on the right',
-          vAxes: {
-            // Adds titles to each axis.
-            0: {
-              title: 'Percentage'
-            },
-          }
-        };
+
 
         function drawMaterialChart() {
           var materialChart = new google.charts.Bar(chartDiv);
           materialChart.draw(data, google.charts.Bar.convertOptions(materialOptions));
-        }
-
-        function drawClassicChart() {
-          var classicChart = new google.visualization.ColumnChart(chartDiv);
-          classicChart.draw(data, classicOptions);
         }
 
         drawMaterialChart();
