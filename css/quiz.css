@@ -5,31 +5,30 @@
 .active {
     border-bottom:3px solid white;
 }
-
-h3 {
-    font-family: Merienda;
-    font-weight: bold;
+nav * {
+    color:#111 !important;
+     text-shadow: 1px 1px white;
+     font-weight:bold;
 }
-body {
-    background: #868686;
-    background: -webkit-linear-gradient(left,rgba(192, 159, 128, 0),rgba(86, 86, 86, 1));
-    background: -o-linear-gradient(right,rgba(192, 159, 128,0),rgba(86, 86, 86, 1));
-    background: -moz-linear-gradient(right,rgba(192, 159, 128,0),rgba(86, 86, 86,1));
-    background: linear-gradient(to right, rgba(192, 159, 128,0), rgba(86, 86, 86,1));
-}
-
 .ask-question {
-    color: #76323F;
-    font-weight: bold;
-}
+    font-size: 18px;
+    font-weight:larger;
 
-.question {
-    font-size: larger;
-    font-family: Merienda;
-    border-bottom:3px solid black;
+}
+.container-fluid {
+    margin:10px;
 }
 .navbar {
-    background-color: #76323F;
-    font-weight: bold;
+height:80px;
+background-image:url('../imgs/streak.png');
+background-size:contain;
 }
-
+footer {
+    height:50px;
+}
+#submitFormBt {
+   margin:20px;
+}
+.blockquote {
+    background-color:#999 !important;
+}
