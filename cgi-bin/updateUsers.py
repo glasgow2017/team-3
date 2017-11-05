@@ -4,6 +4,8 @@ import time
 import uuid
 
 def addUser(age,gender,country):
+    if(age<0):
+        return
     fileName="../json/users.json"
     json_file=open(fileName)
     data=json.load(json_file) #json file as an object
@@ -21,3 +23,13 @@ def addUser(age,gender,country):
     json_file=open(fileName,"w+")
     json_file.write(json.dumps(data,indent=2))
     json_file.close()
+
+def resetUsers():
+        fileName="../json/users.json"
+        json_file=open(fileName)
+        data=json.load(json_file) #json file as an object
+        json_file.close()
+
+        json_file=open(fileName,"w+")
+        json_file.write(json.dumps({"user":[]},indent=2))
+        json_file.close()

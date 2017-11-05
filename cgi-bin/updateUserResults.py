@@ -1,6 +1,12 @@
 import json
 
 def updateResults(age,sex,totalCorrect,totalAnswered):
+    if(totalCorrect>totalAnswered):
+        return
+    if(totalCorrect<0):
+        return
+    if(totalAnswered<0):
+        return
     fileName="../json/userResults.json"
     json_file=open(fileName)
     data=json.load(json_file) #json file as an object
@@ -44,5 +50,5 @@ def resetResults():
         json_file.write(json.dumps(data,indent=2))
         json_file.close()
 
-updateResults(3,"male",1,10)
-resetResults()
+#updateResults(3,"male",1,10)
+#resetResults()
