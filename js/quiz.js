@@ -57,7 +57,7 @@ $.get('json/questions.json',function(response) {
             'age':age,
             'region':region,
             'results':resultsArr };
-        $.post('cgi-bin/quizForm',data);
+        $.post('cgi-bin/quizForm.cgi',data);
     });
 
     $('input').on('click', function (event) {
