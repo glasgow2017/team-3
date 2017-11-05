@@ -9,7 +9,7 @@
         var chartDiv = document.getElementById('chart_div');
 
         var data = google.visualization.arrayToDataTable([
-          ['Gender', 'Male', 'Female'],
+          ['Age', 'Male', 'Female'],
           ['0-9', 80, 23.3],
           ['10-14', 70, 50],
           ['20-24', 20, 14.3],
@@ -70,4 +70,28 @@
         }
 
         drawMaterialChart();
-      };
+      }
+
+      /**
+       * Gets Json object from server to feed into graph
+       */
+      function receiveJsonFromServer() {
+          var xmlhttp = new XMLHttpRequest();
+          var url = "averageresponse.json";
+          xmlhttp.onreadystatechange = function() {
+              if (this.readyState == 4 && this.status == 200) {
+                  var myObj = JSON.parse(this.responseText);
+              }
+          };
+          xmlhttp.open("GET", url, true);
+          xmlhttp.send();
+      }
+
+      //JSON structure: {"key" : ["age", "male", "female"]}
+      myData = ["Age", "Male", "Female"];
+      function feedToGraph(myData, myObj) {
+          for (var property in myObj) {
+              myData.join(",");
+            myData += property;
+          }
+      }
