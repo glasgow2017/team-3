@@ -23,7 +23,7 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a style="color:black;" class="navbar-brand" href="index.html">We heart dolphins</a>
+            <a style="color:black;" class="navbar-brand" href="index.html">3Lunch</a>
         </div>
         <ul class="nav navbar-nav">
             <li><a href="#">Get involved</a></li>
@@ -32,7 +32,7 @@
         </ul>
     </div>
 </nav>
-
+<div class="background">
 <div align="center" id="allQuestions" class="container">
     <h2>How much do you <em>really</em> know about equality?</h2>
     <hr>
@@ -40,12 +40,22 @@
 <div align="center">
 <form class="form-inline">
 
-    <input class="form-control mb-2 mr-sm-2 mb-sm-0" id="genderIn" placeholder="Gender...">
-    <input class="form-control mb-2 mr-sm-2 mb-sm-0" id="regionIn" placeholder="Region...">
-    <input class="form-control mb-2 mr-sm-2 mb-sm-0" id="ageIn" placeholder="Age...">
+    <select  required class="form-control mb-2 mr-sm-2 mb-sm-0" id="genderIn" >
+        <option value="Kenya">Kenya</option>
+        <option value="India">India</option>
+        <option value="Idonesia">Indonesia</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Chille">Chille</option>
+    </select>
+    <select required class="form-control mb-2 mr-sm-2 mb-sm-0" id="regionIn" >
+        <option>Male</option>
+        <option>Female</option>
+    </select>
+    <input min="1" type="number" required class="form-control mb-2 mr-sm-2 mb-sm-0" id="ageIn" placeholder="Age...">
     <br>
-    <button class='btn btn-primary btn-lg' id="submitFormBt">Submit</button>
+    <button class='btn btn-primary btn-lg' id="submitBt">Submit</button>
 </form>
+</div>
 </div>
 
 </body>
